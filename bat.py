@@ -7,7 +7,7 @@ with open("data/initial_setup_data.json", "r") as read_file:
     matrices = json.load(read_file)
 
 def animateMatrices(matrices,outputFilename = None):
-    fig = plot.figure() # make figure
+    fig = plot.figure()
     im = plot.imshow(matrices[0], cmap='hot', interpolation='lanczos')
 
     def updatefig(j):
